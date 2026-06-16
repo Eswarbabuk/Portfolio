@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eswarbabu K | Cybersecurity & Software Developer</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Personal portfolio of Eswarbabu K, Cybersecurity student and Technology Apprentice. Discover cybersecurity research, software development projects, and skills.">
+    <meta name="keywords" content="Eswarbabu K, Eswarbabu Karuturi, Cybersecurity, Technology Apprentice, Resume, Portfolio, Java, Python, Keylogger, PG Visualization">
+    <meta name="author" content="Eswarbabu K">
+    
+    <!-- OpenGraph (Facebook/LinkedIn) Meta Tags -->
+    <meta property="og:title" content="Eswarbabu K | Portfolio">
+    <meta property="og:description" content="Personal portfolio of Eswarbabu K, Cybersecurity student and Technology Apprentice.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Interactive Background Canvas -->
+    <canvas id="cyber-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                <span class="logo-text">Eswar<span class="highlight">.K</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About & Skills</a></li>
+                    <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fa-solid fa-code"></i> Projects</a></li>
+                    <li><a href="#certifications" class="nav-link"><i class="fa-solid fa-award"></i> Certifications</a></li>
+                    <li><a href="#timeline" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <!-- Mobile Menu Hamburger -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="badge fade-in-up">
+                        <span class="badge-dot"></span> Open to Opportunities
+                    </div>
+                    <h1 class="hero-title fade-in-up delay-1">
+                        Hi, I'm <span class="gradient-text">Eswarbabu K</span>
+                    </h1>
+                    <h2 class="hero-subtitle fade-in-up delay-2">
+                        I am a <span id="typed-text" class="typed-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-desc fade-in-up delay-3">
+                        Cybersecurity student and technology apprentice with a strong foundation in programming, algorithms, and data structures. Experienced in software development, endpoint monitoring, and digital presence optimization.
+                    </p>
+                    <div class="hero-cta fade-in-up delay-4">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="Eswar resume for shnoor interview.pdf" download="Eswarbabu_K_Resume.pdf" class="btn btn-secondary">
+                            <span>Download Resume</span> <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-graphic fade-in-up delay-2">
+                    <div class="cyber-shield-container">
+                        <div class="shield-ring outer"></div>
+                        <div class="shield-ring middle"></div>
+                        <div class="shield-ring inner"></div>
+                        <div class="shield-core">
+                            <i class="fa-solid fa-user-shield shield-icon"></i>
+                        </div>
+                        <!-- Technology tags -->
+                        <div class="floating-tag tag-python"><i class="fa-brands fa-python"></i> Python</div>
+                        <div class="floating-tag tag-java"><i class="fa-brands fa-java"></i> Java</div>
+                        <div class="floating-tag tag-sec"><i class="fa-solid fa-key"></i> Cryptography</div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator fade-in-up delay-5">
+                <a href="#about" aria-label="Scroll Down">
+                    <span class="mouse-scroll">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About & Skills Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Profile Overview</span>
+                <h2 class="section-title">Professional Bio & Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-bio-card glass-panel">
+                    <div class="bio-header">
+                        <div class="avatar-placeholder">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <h3>Eswarbabu K</h3>
+                            <p>Technology Apprentice & Cybersecurity Student</p>
+                        </div>
+                    </div>
+                    <div class="bio-content">
+                        <p>
+                            Motivated technology apprentice and Cybersecurity student with strong problem-solving skills, a solid foundation in programming, algorithms, and data structures, and hands-on experience in software development and IT operations.
+                        </p>
+                        <p>
+                            Proficient in Python, Java, SQL, Linux, and front-end development, with exposure to backend technologies and cloud platforms including Google Cloud. Demonstrated ability to collaborate in team environments, deliver live projects from inception to delivery, and apply analytical thinking to solve complex technical problems.
+                        </p>
+                    </div>
+                    
+                    <div class="bio-meta-grid">
+                        <div class="meta-item">
+                            <i class="fa-solid fa-location-dot text-accent"></i>
+                            <div>
+                                <span class="meta-label">Location</span>
+                                <span class="meta-val">Eluru, Andhra Pradesh</span>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fa-solid fa-language text-accent"></i>
+                            <div>
+                                <span class="meta-label">Languages</span>
+                                <span class="meta-val">English (Prof.), Telugu (Native), Hindi (Inter.), Tamil (Conversational)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-card glass-panel">
+                    <h3>Technical Expertise</h3>
+                    <p class="skills-intro">Core technologies, frameworks, and methodologies extracted from my profile:</p>
+                    
+                    <div class="skills-group">
+                        <h4 class="skill-category-title"><i class="fa-solid fa-code text-accent"></i> Programming & Concepts</h4>
+                        <div class="skills-grid">
+                            <div class="skill-tag-wrapper">
+                                <span class="skill-tag">Python & Java</span>
+                                <span class="skill-level" style="width: 90%;"></span>
+                            </div>
+                            <div class="skill-tag-wrapper">
+                                <span class="skill-tag">SQL & Databases</span>
+                                <span class="skill-level" style="width: 80%;"></span>
+                            </div>
+                            <div class="skill-tag-wrapper">
+                                <span class="skill-tag">HTML & CSS</span>
+                                <span class="skill-level" style="width: 85%;"></span>
+                            </div>
+                            <div class="skill-tag-wrapper">
+                                <span class="skill-tag">OOPs & Data Structures</span>
+                                <span class="skill-level" style="width: 85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-group">
+                        <h4 class="skill-category-title"><i class="fa-solid fa-shield-halved text-accent"></i> Security & Operations</h4>
+                        <div class="skills-grid">
+                            <div class="skill-tag-wrapper">
+                                <span class="skill-tag">Wireshark & Nmap</span>
+                                <span class="skill-level" style="width: 85%;"></span>
+                            </div>
+                            <div class="skill-tag-wrapper">
+                                <span class="skill-tag">Burp Suite & Packet Tracer</span>
+                                <span class="skill-level" style="width: 80%;"></span>
+                            </div>
+                            <div class="skill-tag-wrapper">
+                                <span class="skill-tag">Google Cloud & AWS</span>
+                                <span class="skill-level" style="width: 75%;"></span>
+                            </div>
+                            <div class="skill-tag-wrapper">
+                                <span class="skill-tag">SEO & Prompt Eng.</span>
+                                <span class="skill-level" style="width: 80%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="timeline-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Professional Background</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Work Experience Node -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Internship</div>
+                    <div class="timeline-content glass-panel">
+                        <h3>GMB Specialist (SEO Internship)</h3>
+                        <p class="timeline-location">Atnest Private Limited | Hyderabad, Telangana</p>
+                        <ul style="padding-left: 20px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
+                            <li><strong>SEO Performance:</strong> Managed and optimized 10+ Google Business listings, improving local SEO rankings and growing client organic search visibility by <strong>30%</strong>.</li>
+                            <li><strong>Profile Audits:</strong> Conducted comprehensive GMB listing audits and review tracking for 5+ client accounts, deploying SEO adjustments that increased customer interaction rates by <strong>15%</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">My Portfolio</span>
+                <h2 class="section-title">Projects Done</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                <!-- Project 1: PG Visualization -->
+                <div class="project-card glass-panel">
+                    <div class="project-img-wrapper">
+                        <!-- Dashboard Visual Representation -->
+                        <div class="project-preview dashboard-preview">
+                            <div class="chart-mockup">
+                                <div class="chart-bar-container">
+                                    <div class="chart-bar" style="height: 40%"><span>40%</span></div>
+                                    <div class="chart-bar" style="height: 65%"><span>65%</span></div>
+                                    <div class="chart-bar" style="height: 85%"><span>85%</span></div>
+                                    <div class="chart-bar highlight-bar" style="height: 92%"><span>92%</span></div>
+                                    <div class="chart-bar" style="height: 75%"><span>75%</span></div>
+                                    <div class="chart-bar" style="height: 60%"><span>60%</span></div>
+                                </div>
+                                <div class="chart-stats">
+                                    <div class="stat"><span class="stat-dot green"></span> Occupancy: 85%</div>
+                                    <div class="stat"><span class="stat-dot blue"></span> Rooms: 111/130</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="project-badge">May 2026</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>PG Visualization System</h3>
+                        <p style="margin-bottom: 12px;">
+                            <strong>Context:</strong> Guest house managers lacked unified dashboards to view space occupancy, leading to manual logging delays.
+                        </p>
+                        <p style="margin-bottom: 12px;">
+                            <strong>Solution:</strong> Developed a Python-based end-to-end visualization pipeline utilizing data structures and algorithms to process and map accommodation trends across 5+ key metrics.
+                        </p>
+                        <p>
+                            <strong>Impact:</strong> Automated raw data parsing pipelines to map occupancy rates, pricing shifts, and location stats, reducing administrative manual analysis time by <strong>40%</strong>.
+                        </p>
+                        <div class="project-tags" style="margin-top: 15px;">
+                            <span>Python</span>
+                            <span>Data Visualization</span>
+                            <span>Statistical Analysis</span>
+                            <span>Algorithms</span>
+                            <span>Graph Rendering</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Eswarbabuk" target="_blank" rel="noopener" class="project-link" aria-label="View Github Repository">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                            <button class="project-link-demo open-demo-btn" data-demo="pg-demo">
+                                <i class="fa-solid fa-desktop"></i> Open Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Keylogger -->
+                <div class="project-card glass-panel">
+                    <div class="project-img-wrapper">
+                        <div class="project-preview cyber-preview">
+                            <div class="terminal-mockup">
+                                <div class="terminal-header">
+                                    <span class="t-dot red"></span>
+                                    <span class="t-dot yellow"></span>
+                                    <span class="t-dot green"></span>
+                                    <span class="terminal-title">key_logger.py</span>
+                                </div>
+                                <div class="terminal-body">
+                                    <p class="t-line text-green">$ python3 keylogger.py</p>
+                                    <p class="t-line">[+] Monitoring keystrokes...</p>
+                                    <p class="t-line text-cyan">[i] OS Detected: Unix/Linux</p>
+                                    <p class="t-line">Logged: "admin_pass_2026"</p>
+                                    <p class="t-line text-yellow">[!] Proof-of-Concept testing active</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="project-badge">Sep 2024</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Keylogger – Endpoint Security Research Tool</h3>
+                        <p style="margin-bottom: 12px;">
+                            <strong>Context:</strong> Needed a secure, system-level auditor to study and document how keystroke vulnerabilities affect active workstations.
+                        </p>
+                        <p style="margin-bottom: 12px;">
+                            <strong>Solution:</strong> Engineered an OOP-based keylogger in Python with cross-platform capability across Unix/Linux, Windows, and macOS, utilizing low-level OS hooks.
+                        </p>
+                        <p>
+                            <strong>Impact:</strong> Deployed as an ethical proof-of-concept to demonstrate endpoint data risks, highlighting mitigation requirements aligning with penetration testing guidelines.
+                        </p>
+                        <div class="project-tags" style="margin-top: 15px;">
+                            <span>Python</span>
+                            <span>OOP</span>
+                            <span>Cross-Platform</span>
+                            <span>Unix/Linux</span>
+                            <span>Endpoint Monitoring</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Eswarbabuk" target="_blank" rel="noopener" class="project-link" aria-label="View Github Repository">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="about-section scroll-reveal" style="padding-top: 50px; padding-bottom: 50px;">
+            <div class="section-header">
+                <span class="section-subtitle">Validations</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="glass-panel" style="padding: 24px; display: flex; flex-direction: column; gap: 10px;">
+                    <div style="font-size: 2rem; color: var(--accent);"><i class="fa-solid fa-award"></i></div>
+                    <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700;">Google Cybersecurity Professional</h3>
+                    <p style="font-size: 0.8rem; font-weight: 600; color: var(--accent-secondary);">Google / Coursera | Jun 2026</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Focus areas: Python, Linux, SQL, SIEM, IDS, Threat Detection & Mitigation.</p>
+                </div>
+
+                <div class="glass-panel" style="padding: 24px; display: flex; flex-direction: column; gap: 10px;">
+                    <div style="font-size: 2rem; color: var(--accent);"><i class="fa-solid fa-shield-check"></i></div>
+                    <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700;">Fundamentals of Cybersecurity</h3>
+                    <p style="font-size: 0.8rem; font-weight: 600; color: var(--accent-secondary);">Cisco Networking Academy</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Focus areas: Network security components, host defense, threats, protocols.</p>
+                </div>
+
+                <div class="glass-panel" style="padding: 24px; display: flex; flex-direction: column; gap: 10px;">
+                    <div style="font-size: 2rem; color: var(--accent);"><i class="fa-solid fa-server"></i></div>
+                    <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700;">MongoDB and AI Fundamentals</h3>
+                    <p style="font-size: 0.8rem; font-weight: 600; color: var(--accent-secondary);">ICT Academy</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Focus areas: NoSQL database storage structures, data retrieval, AI basics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="timeline" class="timeline-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Academic Timeline</span>
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Education Node 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2027</div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Bachelor of Engineering – Cybersecurity</h3>
+                        <p class="timeline-location">J.N.N Institutions, Chennai, Tamil Nadu</p>
+                        <p style="font-weight: 600; color: var(--accent); margin-bottom: 6px;">CGPA: 8.21 / 10.00</p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                            <strong>Coursework:</strong> Network Security, Ethical Hacking, Cryptography, Digital Forensics, Risk Management, Algorithms, Data Structures.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education Node 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Higher Secondary Certificate (Class XII) – MPC</h3>
+                        <p class="timeline-location">Sri Chaitanya Jr College, Eluru, Andhra Pradesh</p>
+                        <p style="font-weight: 600; color: var(--accent);">Percentage: 82%</p>
+                    </div>
+                </div>
+
+                <!-- Education Node 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Secondary School Certificate (Class X)</h3>
+                        <p class="timeline-location">Sri Chaitanya School, Eluru, Andhra Pradesh</p>
+                        <p style="font-weight: 600; color: var(--accent);">Percentage: 100%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-container">
+                <!-- Contact info cards -->
+                <div class="contact-info-grid">
+                    <a href="mailto:eswarkaruturi1920@gmail.com" class="info-card glass-panel">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-details">
+                            <h3>Email Me</h3>
+                            <p>eswarkaruturi1920@gmail.com</p>
+                            <span class="info-cta">Send email <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="tel:+916281393602" class="info-card glass-panel">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-details">
+                            <h3>Call Me</h3>
+                            <p>+91 6281393602</p>
+                            <span class="info-cta">Dial now <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <div class="socials-container glass-panel">
+                        <h3>Find Me Online</h3>
+                        <p>Connect with me on professional and developer platforms:</p>
+                        <div class="social-links-row">
+                            <a href="https://github.com/Eswarbabuk" target="_blank" rel="noopener" class="social-btn github" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/eswar-karuturi-545613290/" target="_blank" rel="noopener" class="social-btn linkedin" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-panel glass-panel">
+                    <h3>Send A Message</h3>
+                    <p>Have an inquiry or a potential opportunity? Fill out the form below.</p>
+                    
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                    <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <span class="error-msg" id="name-error">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Your Email</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-envelope input-icon"></i>
+                                    <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                                </div>
+                                <span class="error-msg" id="email-error">Please enter a valid email</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-pen-nib input-icon"></i>
+                                <input type="text" id="form-subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
+                            </div>
+                            <span class="error-msg" id="subject-error">Please enter a subject</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <div class="input-wrapper text-area-wrapper">
+                                <i class="fa-solid fa-comment-dots input-icon"></i>
+                                <textarea id="form-message" name="message" rows="5" placeholder="Hi Eswar, I'd like to discuss..." required></textarea>
+                            </div>
+                            <span class="error-msg" id="message-error">Please write a message</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                            <span class="btn-success-icon"><i class="fa-solid fa-check"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Interactive Demo Modal for PG Visualization System -->
+    <div id="demo-modal" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h3>PG Occupancy Visualization Demo</h3>
+                <button id="close-modal-btn" class="close-btn" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <p class="demo-description">
+                    This interactive demo displays a simulated representation of the PG Visualization System showing room occupancies and updates.
+                </p>
+                <div class="demo-dashboard">
+                    <div class="dashboard-metrics">
+                        <div class="metric-card">
+                            <div class="metric-val" id="demo-occupancy">85.4%</div>
+                            <div class="metric-label">Occupancy Rate</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val" id="demo-total">111 / 130</div>
+                            <div class="metric-label">Rooms Occupied</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val" id="demo-available">19</div>
+                            <div class="metric-label">Available Rooms</div>
+                        </div>
+                    </div>
+
+                    <!-- Daily Trend Visualization -->
+                    <div class="visualizer-chart-box">
+                        <div class="chart-header">
+                            <span>Occupancy Trend (Last 7 Days)</span>
+                            <span class="badge badge-green"><span class="badge-dot"></span> Live Data Simulation</span>
+                        </div>
+                        <div class="simulation-chart" id="simulation-chart">
+                            <!-- Visual Bars rendered with JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="dashboard-controls">
+                        <button class="btn btn-secondary btn-sm" id="btn-simulate-update">
+                            <i class="fa-solid fa-arrows-rotate"></i> Simulated Daily Update
+                        </button>
+                        <span class="sim-log-text" id="sim-log-text">Ready. Click update to simulate new occupants checking in/out.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast System -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Eswarbabu K. All rights reserved.</p>
+            <p class="footer-tagline">Cybersecurity & Software Development</p>
+            <a href="#home" class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
